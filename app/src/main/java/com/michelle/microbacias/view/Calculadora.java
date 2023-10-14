@@ -24,7 +24,7 @@ public class Calculadora extends AppCompatActivity {
         largura = findViewById(R.id.editlargura);
         angulo = findViewById(R.id.editangulo);
         calcular = findViewById(R.id.btcalcular);
-        resultado = findViewById(R.id.resultado);
+        resultado = findViewById(R.id.volumeMicrobacia);
 
         calcular.setOnClickListener(new View.OnClickListener() {
 
@@ -32,7 +32,7 @@ public class Calculadora extends AppCompatActivity {
             public void onClick(View v) {
                 Calculo calc = new Calculo();
                 // Exiba o resultado no TextView
-                resultado.setText("Volume calculado: " + volume);
+                resultado.setText("Volume calculado: " + calc.getVolume());
             }
         });
     }

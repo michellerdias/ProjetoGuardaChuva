@@ -11,7 +11,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android: android:orientation="vertical"
+    android:orientation="vertical"
     android:background="@color/azul_claro"
     android:gravity="center"
     tools:context=".MainActivity">
@@ -19,7 +19,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="190dp"
-        android:src="@drawable/Chuva"/>
+        android:src="@drawable/chuva"/>
 
     <TextView
         android:layout_width="match_parent"

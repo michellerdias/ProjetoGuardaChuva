@@ -31,7 +31,7 @@
                     android:layout_marginEnd="10dp"
                     android:layout_marginRight="10dp"
                     android:layout_marginBottom="10dp"
-                    android:src="@drawable/Chuva"
+                    android:src="@drawable/chuva"
                     android:id="@+id/chuvamenu"
                     />
 
@@ -69,6 +69,6 @@
     </ScrollView>
 
 
-</LinearLayout>
+<!--</LinearLayout>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,6 +2,7 @@ package com.michelle.microbacias.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -25,10 +26,11 @@ public class NovaMicrobacia extends AppCompatActivity {
     private double altura;
     private double largura;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_nova_microbacia);
 
         editNomeProprietario = findViewById(R.id.editNomeProprietario);
         editCpf = findViewById(R.id.editCpf);

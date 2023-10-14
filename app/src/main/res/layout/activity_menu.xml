@@ -32,7 +32,7 @@
                     android:layout_marginEnd="10dp"
                     android:layout_marginRight="10dp"
                     android:layout_marginBottom="10dp"
-                    android:src="@drawable/Chuva"
+                    android:src="@drawable/chuva"
                     android:id="@+id/chuvamenu"
                     />
 
@@ -56,7 +56,7 @@
                 android:columnCount="2"
                 android:layout_marginTop="-80dp"
                 android:padding="5dp"
-                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
                 >
 
                 <androidx.cardview.widget.CardView

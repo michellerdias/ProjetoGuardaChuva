@@ -32,7 +32,7 @@
                     android:layout_marginEnd="10dp"
                     android:layout_marginRight="10dp"
                     android:layout_marginBottom="10dp"
-                    android:src="@drawable/Chuva"
+                    android:src="@drawable/chuva"
                     android:id="@+id/chuvamenu"
                     />
 
@@ -55,7 +55,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:src="@drawable/Telhado"
+                android:src="@drawable/telhado"
                 android:layout_marginTop="-80dp"
                 />
 
@@ -109,7 +109,7 @@
                     android:layout_margin="10dp" />
             </GridLayout>
 
-            //Como capturar a informação que o usuário inputa dentro da caixa de texto?
+            <!--Como capturar a informação que o usuário inputa dentro da caixa de texto?-->
 
             <Button
                 android:id="@+id/btcalcular"
@@ -128,7 +128,7 @@
                 app:cornerRadius="15dp" />
 
             <TextView
-                    android:id="@+id/editlargura"
+                    android:id="@+id/volumeMicrobacia"
                     android:layout_width="200dp"
                     android:layout_height="110dp"
                     android:background="@color/azul_claro"

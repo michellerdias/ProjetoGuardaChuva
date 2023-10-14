@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.tutorial"
+    tools:context=".view.Tutorial"
     android:orientation="vertical"
     >
     <ScrollView
@@ -32,7 +32,7 @@
                     android:layout_marginEnd="10dp"
                     android:layout_marginRight="10dp"
                     android:layout_marginBottom="10dp"
-                    android:src="@drawable/Chuva"
+                    android:src="@drawable/chuva"
                     android:id="@+id/chuvamenu"
                     />
 

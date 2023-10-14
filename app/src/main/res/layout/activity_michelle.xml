@@ -32,7 +32,7 @@
                     android:layout_marginEnd="10dp"
                     android:layout_marginRight="10dp"
                     android:layout_marginBottom="10dp"
-                    android:src="@drawable/Chuva"
+                    android:src="@drawable/chuva"
                     android:id="@+id/chuvamenu"
                     />
 
@@ -64,7 +64,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="350dp"
-                android:src="@drawable/MichelleColagem"
+                android:src="@drawable/michellecolagem"
                 android:layout_marginTop="-90dp"
                 />
 
@@ -145,7 +145,7 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="60dp"
-                            android:src="@drawable/FotoArtur"
+                            android:src="@drawable/fotoartur"
                             android:layout_gravity="center_horizontal|center_vertical"
 
                             />
@@ -181,7 +181,7 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="60dp"
-                            android:src="@drawable/FotoAna"
+                            android:src="@drawable/fotoana"
                             android:layout_gravity="center_horizontal|center_vertical"
 
                             />
@@ -218,7 +218,7 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="60dp"
-                            android:src="@drawable/FotoVanessa"
+                            android:src="@drawable/fotovanessa"
                             android:layout_gravity="center_horizontal|center_vertical"
 
                             />

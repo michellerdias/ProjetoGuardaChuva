@@ -22,7 +22,7 @@
             android:name=".view.Calculadora"
             android:exported="false" />
         <activity
-            android:name=".view.tutorial"
+            android:name=".view.Tutorial"
             android:exported="false" />
         <activity
             android:name=".view.Michelle"
