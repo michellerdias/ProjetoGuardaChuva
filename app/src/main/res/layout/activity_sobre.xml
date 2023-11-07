@@ -72,7 +72,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Deselvolvedores"
+                android:text="Desenvolvedores"
                 android:textSize="36sp"
                 android:textColor="@color/azul_claro"
                 android:textStyle="bold"
@@ -219,7 +219,7 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="90dp"
-                            android:src="@drawable/fotovanessa"
+                            android:src="@drawable/fotovalessa"
                             android:layout_gravity="center_horizontal|center_vertical"
 
                             />

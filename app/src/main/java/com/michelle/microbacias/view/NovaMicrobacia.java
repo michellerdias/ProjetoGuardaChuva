@@ -6,11 +6,14 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.michelle.microbacias.Calculo;
 import com.michelle.microbacias.MainActivity;
 import com.michelle.microbacias.R;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -20,11 +23,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class NovaMicrobacia extends AppCompatActivity {
-    private EditText editNomeProprietario, editCpf, editCep, editRua, editNumero;
-    private Button btContinuar;
-    private double angulo;
-    private double altura;
-    private double largura;
+    private EditText editNomeProprietario, editCpf, editCep, editRua, editNumero, altura, angulo, largura;
+    private Button btcalcular, btsalvar;
+    TextView resultado;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -37,12 +38,34 @@ public class NovaMicrobacia extends AppCompatActivity {
         editCep = findViewById(R.id.editCep);
         editRua = findViewById(R.id.editRua);
         editNumero = findViewById(R.id.editNumero);
-        btContinuar = findViewById(R.id.btcontinuar);
-        altura = 0;
-        angulo = 0;
-        largura = 0;
+        btcalcular = findViewById(R.id.btcalcular);
+        altura = findViewById(R.id.editaltura);
+        largura = findViewById(R.id.editlargura);
+        angulo = findViewById(R.id.editangulo);
+        resultado = findViewById(R.id.volumeMicrobacia);
+        btsalvar = findViewById(R.id.btsalvar);
 
-        btContinuar.setOnClickListener(new View.OnClickListener() {
+        btcalcular.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                double anguloValue = Double.parseDouble(findViewById(R.id.editangulo).toString());
+                double alturaValue = Double.parseDouble(findViewById(R.id.editaltura).toString());
+                double larguraValue = Double.parseDouble(findViewById(R.id.editlargura).toString());
+                double anguloRadianos = Math.toRadians(anguloValue);
+                double alturaEfetiva = alturaValue * Math.cos(anguloRadianos);
+                double volume = larguraValue * alturaEfetiva * 0.1718;
+
+                public double getVolume() {
+                    return volume;
+                }
+                resultado.setText("Volume calculado: " + getVolume());
+            }
+        });
+
+
+        btsalvar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String nomeProprietario = editNomeProprietario.getText().toString();

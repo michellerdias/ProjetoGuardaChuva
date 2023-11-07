@@ -9,35 +9,35 @@ import android.view.View;
 
 import com.michelle.microbacias.R;
 
-public class Michelle extends AppCompatActivity {
+public class Valessa extends AppCompatActivity {
 
-    private CardView gitMichelle;
+    private CardView linkedinvalessa;
     private CardView artur;
     private CardView ana;
-    private CardView valessa;
+    private CardView michelle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_michelle);
+        setContentView(R.layout.activity_valessa);
 
-        gitMichelle = findViewById(R.id.gitMichelle);
+        linkedinvalessa = findViewById(R.id.linkedinvalessa);
         artur = findViewById(R.id.artur);
         ana = findViewById(R.id.ana);
-        valessa = findViewById(R.id.valessa);
+        michelle = findViewById(R.id.michelle);
 
-        gitMichelle.setOnClickListener(new View.OnClickListener() {
+        linkedinvalessa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 // Abra o link https://github.com/michellerdias em um navegador da web
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/michellerdias")));
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.linkedin.com/in/valessa-lopes-da-silva-3bbaa0127?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app")));
             }
         });
 
         artur.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(Michelle.this, Artur.class);
+                Intent i = new Intent(Valessa.this, Artur.class);
                 startActivity(i);
             }
         });
@@ -45,15 +45,15 @@ public class Michelle extends AppCompatActivity {
         ana.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(Michelle.this, Ana.class);
+                Intent i = new Intent(Valessa.this, Ana.class);
                 startActivity(i);
             }
         });
 
-        valessa.setOnClickListener(new View.OnClickListener() {
+        michelle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(Michelle.this, Valessa.class);
+                Intent i = new Intent(Valessa.this, Michelle.class);
                 startActivity(i);
             }
         });

@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.michelle.microbacias.view.NovaMicrobacia;
 
 public class Calculo extends AppCompatActivity {
+
     double anguloValue = Double.parseDouble(findViewById(R.id.editangulo).toString());
     double alturaValue = Double.parseDouble(findViewById(R.id.editaltura).toString());
     double larguraValue = Double.parseDouble(findViewById(R.id.editlargura).toString());

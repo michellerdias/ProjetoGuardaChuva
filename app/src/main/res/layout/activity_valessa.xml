@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.Michelle"
+    tools:context=".view.Valessa"
     android:orientation="vertical"
     >
     <ScrollView
@@ -53,7 +53,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Michelle Dias"
+                android:text="Valessa Lopes"
                 android:textSize="36sp"
                 android:textColor="@color/white"
                 android:textStyle="bold"
@@ -76,13 +76,19 @@
                 android:layout_marginTop="-80dp"
                 android:layout_marginBottom="15dp"
                 android:gravity="center"
-                android:text="Sou a Michelle, apaixonada pela tecnologia e eterna estudante. Formada em Engenharia Metalúrgica pela Universidade Federal de Minas Gerais e especialista em Engenharia de Software e Desenvolvimento Orientado a Objetos com Java pela Estácio. Atualmente curso minha segunda graduação em Sistemas de Informação com foco em me tornar uma desenvolvedora Back-End. Meu propósito é utilizar a inovação para resolver problemas e facilitar a vida das pessoas, descomplicando o uso da tecnologia a fim de promover o crescimento dos negócios."
+                android:text="Sou uma profissional dedicada e apaixonada pelas áreas de Psicologia e Tecnologia da Informação. Concluí minha graduação em Psicologia no Pitágoras em 2018, onde adquiri uma sólida base em compreender o comportamento humano e suas complexidades.
+
+Atualmente, estou embarcando em uma emocionante jornada de aprendizado em Sistemas de Informação na Estácio. Minha paixão pela Psicologia e minha busca por desafios me levaram a explorar o mundo da tecnologia, onde estou adquirindo habilidades para criar soluções eficazes e inovadoras.
+
+Minha formação diversificada me permite abordar problemas com perspectivas diferentes e colaborar de forma eficaz em equipes multidisciplinares. Estou ansiosa para combinar meu conhecimento em Psicologia com minhas habilidades em Sistemas de Informação para criar soluções que melhorem a vida das pessoas.
+
+Estou comprometida com o aprendizado contínuo e ansiosa para enfrentar novos desafios em ambas as áreas. Estou empolgada para contribuir de forma significativa em projetos futuros."
                 android:textColor="@color/black"
                 android:textSize="14sp"
                 android:textStyle="" />
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/gitMichelle"
+                android:id="@+id/linkedinvalessa"
                 android:layout_width="350dp"
                 android:layout_height="100dp"
                 android:layout_margin="5dp"
@@ -104,7 +110,7 @@
                         android:layout_width="100dp"
                         android:layout_height="match_parent"
                         android:layout_gravity="center_horizontal|center_vertical"
-                        android:src="@drawable/github"
+                        android:src="@drawable/linkedin"
 
                         />
 
@@ -113,7 +119,7 @@
                         android:layout_height="match_parent"
                         android:layout_gravity="center_horizontal"
                         android:gravity="center"
-                        android:text="Clique aqui para acessar meus projetos no Github"
+                        android:text="Clique aqui para acessar meu Linkedin"
                         android:textSize="15sp"
                         android:textStyle="bold" />
                 </LinearLayout>
@@ -201,7 +207,7 @@
 
                 </androidx.cardview.widget.CardView>
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/valessa"
+                    android:id="@+id/michelle"
                     android:layout_width="110dp"
                     android:layout_height="110dp"
                     android:layout_margin="10dp"
@@ -220,7 +226,7 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="60dp"
-                            android:src="@drawable/fotovalessa"
+                            android:src="@drawable/fotomichelle"
                             android:layout_gravity="center_horizontal|center_vertical"
 
                             />
@@ -228,7 +234,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Valessa"
+                            android:text="Michelle"
                             android:textSize="15sp"
                             android:layout_gravity="center_horizontal"
                             android:textStyle="bold"
