@@ -1,7 +1,8 @@
-package com.michelle.microbacias;
+package com.michelle.microbacias.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.michelle.microbacias.R;
 import com.michelle.microbacias.view.NovaMicrobacia;
 
 public class Calculo extends AppCompatActivity {

@@ -1,19 +1,14 @@
 package com.michelle.microbacias.view;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
-import android.content.Intent;
 import android.os.Bundle;
-
-import com.michelle.microbacias.Calculo;
-import com.michelle.microbacias.MainActivity;
+import com.google.android.material.snackbar.Snackbar;
 import com.michelle.microbacias.R;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -23,7 +18,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class NovaMicrobacia extends AppCompatActivity {
-    private EditText editNomeProprietario, editCpf, editCep, editRua, editNumero, altura, angulo, largura;
+    private EditText editNomeProprietario, editCpf, editCep, editRua, editNumero, editaltura, editangulo, editlargura;
     private Button btcalcular, btsalvar;
     TextView resultado;
 
@@ -39,9 +34,9 @@ public class NovaMicrobacia extends AppCompatActivity {
         editRua = findViewById(R.id.editRua);
         editNumero = findViewById(R.id.editNumero);
         btcalcular = findViewById(R.id.btcalcular);
-        altura = findViewById(R.id.editaltura);
-        largura = findViewById(R.id.editlargura);
-        angulo = findViewById(R.id.editangulo);
+        editaltura = findViewById(R.id.editaltura);
+        editlargura = findViewById(R.id.editlargura);
+        editangulo = findViewById(R.id.editangulo);
         resultado = findViewById(R.id.volumeMicrobacia);
         btsalvar = findViewById(R.id.btsalvar);
 
@@ -49,21 +44,11 @@ public class NovaMicrobacia extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-
-                double anguloValue = Double.parseDouble(findViewById(R.id.editangulo).toString());
-                double alturaValue = Double.parseDouble(findViewById(R.id.editaltura).toString());
-                double larguraValue = Double.parseDouble(findViewById(R.id.editlargura).toString());
-                double anguloRadianos = Math.toRadians(anguloValue);
-                double alturaEfetiva = alturaValue * Math.cos(anguloRadianos);
-                double volume = larguraValue * alturaEfetiva * 0.1718;
-
-                public double getVolume() {
-                    return volume;
-                }
-                resultado.setText("Volume calculado: " + getVolume());
+                Calculo calc = new Calculo();
+                // Exiba o resultado no TextView
+                resultado.setText(calc.getVolume() + "m³");
             }
         });
-
 
         btsalvar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,6 +58,10 @@ public class NovaMicrobacia extends AppCompatActivity {
                 String cep = editCep.getText().toString();
                 String rua = editRua.getText().toString();
                 String numero = editNumero.getText().toString();
+                String altura = editaltura.getText().toString();
+                String largura = editlargura.getText().toString();
+                String angulo = editangulo.getText().toString();
+                String resultadoText = resultado.getText().toString();
 
                 // Verifique se os campos não estão vazios
                 if (!nomeProprietario.isEmpty() && !cpf.isEmpty() && !cep.isEmpty() && !rua.isEmpty() && !numero.isEmpty()) {
@@ -89,24 +78,26 @@ public class NovaMicrobacia extends AppCompatActivity {
                     microbacia.put("altura", altura);
                     microbacia.put("largura", largura);
                     microbacia.put("angulo", angulo);
-
+                    microbacia.put("volume", resultadoText);
 
                     // Adicione os dados ao Firestore
                     microbaciaRef.set(microbacia)
                             .addOnSuccessListener(new OnSuccessListener<Void>() {
                                 @Override
                                 public void onSuccess(Void aVoid) {
-                                    // Dados enviados com sucesso
-                                    //Abre a Activity Calculadora
-                                    Intent intent = new Intent(NovaMicrobacia.this, Calculadora.class);
-                                    startActivity(intent);
+                                    Snackbar snackbar = Snackbar.make(view, "Microbacia cadastrada!", Snackbar.LENGTH_LONG);
+                                    View snackbarView = snackbar.getView();
+                                    snackbarView.setBackgroundColor(getResources().getColor(R.color.azul_claro));
+                                    snackbar.show();
                                 }
                             })
                             .addOnFailureListener(new OnFailureListener() {
                                 @Override
                                 public void onFailure(@NonNull Exception e) {
-                                    // Tratamento de erros das falhas
-                                    // Pensar nos tipos de erro
+                                    Snackbar snackbar = Snackbar.make(view, "Tente novamente.", Snackbar.LENGTH_LONG);
+                                    View snackbarView = snackbar.getView();
+                                    snackbarView.setBackgroundColor(getResources().getColor(R.color.vermelho));
+                                    snackbar.show();
                                 }
                             });
                 }
