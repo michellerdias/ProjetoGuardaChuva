@@ -64,7 +64,9 @@ public class NovaMicrobacia extends AppCompatActivity {
                 String resultadoText = resultado.getText().toString();
 
                 // Verifique se os campos não estão vazios
-                if (!nomeProprietario.isEmpty() && !cpf.isEmpty() && !cep.isEmpty() && !rua.isEmpty() && !numero.isEmpty()) {
+                if (!nomeProprietario.isEmpty() && !cpf.isEmpty() && !cep.isEmpty() &&
+                        !rua.isEmpty() && !numero.isEmpty() && !altura.isEmpty() && !largura.isEmpty() &&
+                        !angulo.isEmpty() &&  !resultadoText.isEmpty()) {
                     FirebaseFirestore db = FirebaseFirestore.getInstance();
                     DocumentReference microbaciaRef = db.collection("microbacias").document();
 
