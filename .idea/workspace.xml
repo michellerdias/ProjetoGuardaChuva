@@ -9,19 +9,13 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="67831569-f9c6-46f8-85e1-d86503de188d" name="Changes" comment="Correção NovaMirobacia">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/michelle/microbacias/view/Geolocalizacao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/michelle/microbacias/view/NovaMicrobacia.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/michelle/microbacias/view/NovaMicrobacia.java" afterDir="false" />
-    </list>
+    <list default="true" id="67831569-f9c6-46f8-85e1-d86503de188d" name="Changes" comment="Alterações em Menu, AndroidManifest, gradle (app), NovaMicrobacia," />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\miche\.android\avd\Pixel_3a_API_34_extension_level_7_x86_64.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\ramon\.android\avd\Pixel_3a_API_34_extension_level_7_x86_64.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -35,25 +29,39 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Ana Ribeiro &lt;anapribbeiro@gmail.com&gt;" />
+        <option value="michellerdias &lt;michelle.rendias@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2Xj9rn4DP4hRIQGgxvBtXSxIimG" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "cidr.known.project.marker": "true",
-    "last_opened_file_path": "C:/Users/miche/AndroidStudioProjects/GuardaChuva"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/miche/AndroidStudioProjects/GuardaChuva&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ramon\Documents\ProjetoGuardaChuva\app\src\main\res\drawable" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="Microbacias.app.main" />
@@ -152,7 +160,49 @@
       <option name="project" value="LOCAL" />
       <updated>1699403243342</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Alterações em Menu, AndroidManifest, gradle (app), NovaMicrobacia,">
+      <created>1699912603304</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1699912603304</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Alterações em Menu, AndroidManifest, gradle (app), NovaMicrobacia,">
+      <created>1699912618422</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1699912618422</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Alterações em Menu, AndroidManifest, gradle (app), NovaMicrobacia,">
+      <created>1699912639341</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1699912639341</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Alterações em Menu, AndroidManifest, gradle (app), NovaMicrobacia,">
+      <created>1699912933690</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1699912933690</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Alterações em Menu, AndroidManifest, gradle (app), NovaMicrobacia,">
+      <created>1699913193832</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1699913193832</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Alterações em Menu, AndroidManifest, gradle (app), NovaMicrobacia,">
+      <created>1699913435686</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1699913435686</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -169,6 +219,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Atualização" />
     <MESSAGE value="Correção NovaMirobacia" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correção NovaMirobacia" />
+    <MESSAGE value="Correção NovaMirobacia, Telas de desenvolvedores e tutorial" />
+    <MESSAGE value="Alterações em Menu, AndroidManifest, gradle (app), NovaMicrobacia," />
+    <option name="LAST_COMMIT_MESSAGE" value="Alterações em Menu, AndroidManifest, gradle (app), NovaMicrobacia," />
   </component>
 </project>

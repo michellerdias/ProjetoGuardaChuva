@@ -4,70 +4,144 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.Tutorial"
+    tools:context=".view.Menu"
     android:orientation="vertical"
     >
+
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <LinearLayout
+        android:layout_height="3000000000dp"/>
+
+    <RelativeLayout
+        android:id="@+id/topArea"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@color/azul_claro">
+
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:gravity="center">
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginEnd="20dp"
+            android:text="Tutorial"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
-            <RelativeLayout
-                android:id="@+id/topArea"
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:background="@color/azul_claro"
-                >
+    </RelativeLayout>
 
-                <ImageView
-                    android:layout_width="102dp"
-                    android:layout_height="96dp"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginBottom="10dp"
-                    android:src="@drawable/chuva"
-                    android:id="@+id/chuvamenu"
-                    />
 
-                <TextView
-                    android:id="@+id/microbaciasmenu"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="20dp"
-                    android:text="Microbacias"
-                    android:textColor="@android:color/white"
-                    android:textSize="35sp"
-                    android:textStyle="bold"
-                    android:layout_toEndOf="@id/chuvamenu"
-                    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Instruções de Uso:"
+        android:textSize="20sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="133dp"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold" />
 
-            </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1.Faça login com e-mail e senha ou cadastre sua conta."
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_margin="10dp" />
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:src="@drawable/estacio"
-                android:layout_marginTop="120dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2. Acesse a Seção de Nova Microbacias."
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_margin="10dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3. Dentro da seção de Microbacias, você encontrará a opção:Adicionar Nova Bacia ou Cadastrar Nova Bacia."
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_margin="10dp" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Sair"
-                android:textSize="12sp"
-                android:textColor="@color/azul_roial"
-                android:textStyle="bold"
-                android:gravity="center"
-                android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="4.Clique nesta opção para iniciar o processo de cadastro."
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_margin="10dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5. Preencha os Dados da Nova Bacia:
+Agora você verá um formulário para inserir os dados."
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_margin="10dp" />
 
-        </LinearLayout>
-    </ScrollView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="6. Preencha todos os campos obrigatórios, como nome, cpf, cep, endereço."
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="7.Depois vá para a Seção de Microbacias cadastradas:
+   localize e clique no botão Microbacias."
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_margin="10dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="8. Esta seção é onde você gerenciará e adicionará informações sobre as microbacias existentes.."
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_margin="10dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="9. Nessa seção você poderá visualizar e editar os dados da bacia a qualquer momento na seção de Microbacias."
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_margin="10dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="9. Volte para o Menu e lá encontrará uma seção sobre os desenvolvedores do aplicativo.
+Clique nela e obtenha informações na página de cada um deles.."
+        android:textSize="16sp"
+        android:layout_margin="10dp" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/estacio"
+        android:layout_marginTop="-710dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Sair"
+        android:textSize="12sp"
+        android:layout_height="70dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/azul_roial"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
 
 
 </LinearLayout>
